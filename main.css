@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+}
+.circle{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+.circle>div{
+position: relative;
+width: 600px;
+margin-bottom: 15px;
+}
+.blue{
+    color: blue;
+}
+.blue::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, blue 50%, #ddd 50%) ;
+    position: absolute;
+    left: 2%;
+    top: 120%;
+}
+.red{
+    color: red;
+}
+.red::after{
+        content: "";
+            width: 100%;
+            height: 2px;
+            background-image: linear-gradient(to right, red 50%, #ddd 50%);
+            position: absolute;
+            left: 2%;
+            top: 120%;
+}
+.green{
+    color: green;
+}
+.green::after{
+        content: "";
+            width: 100%;
+            height: 2px;
+            background-image: linear-gradient(to right, green 50%, #ddd 50%);
+            position: absolute;
+            left: 2%;
+            top: 120%;
+}
+.orange{
+    color: orange;
+}
+.orange::after{
+    content: "";
+        width: 100%;
+        height: 2px;
+        background-image: linear-gradient(to right, orange 50%, #ddd 50%);
+        position: absolute;
+        left: 2%;
+        top: 120%;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.box>div {
+    position: relative;
+    width: 600px;
+    margin-bottom: 15px;
+}
+.triangle-up {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.triangle-up>div {
+    position: relative;
+    width: 600px;
+    margin-bottom: 30px;
+}
+.triangle-down {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.triangle-down>div {
+    position: relative;
+    width: 600px;
+    margin-bottom: 30px;
+}
+.circle .blue::before{
+    content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: blue;
+        position: absolute;
+        left: 0px;
+        top: 95%;
+}
+.circle .red::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    left: 0px;
+    top: 95%;
+}
+.circle .green::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 0px;
+    top: 95%;
+}
+.circle .orange::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: orange;
+    position: absolute;
+    left: 0px;
+    top: 95%;
+}
+.box .blue::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    position: absolute;
+    left: 0;
+    top: 95%;
+}
+.box .red::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 95%;
+}
+.box .green::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    position: absolute;
+    left: 0;
+    top: 95%;
+}
+.box .orange::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: 95%;
+}
+.triangle-up .blue::before{
+    content: "";
+        border-width: 8px;
+        border-style: solid;
+        border-color: transparent transparent blue transparent;
+        position: absolute;
+        left: 2%;
+        top: 31%;
+}
+.triangle-up .red::before{
+    content: "";
+        border-width: 8px;
+        border-style: solid;
+        border-color: transparent transparent red transparent;
+        position: absolute;
+        left: 2%;
+        top: 31%;
+}
+.triangle-up .green::before{
+    content: "";
+        border-width: 8px;
+        border-style: solid;
+        border-color: transparent transparent green transparent;
+        position: absolute;
+        left: 2%;
+        top: 31%;
+}
+.triangle-up .orange::before{
+    content: "";
+        border-width: 8px;
+        border-style: solid;
+        border-color: transparent transparent orange transparent;
+        position: absolute;
+        left: 2%;
+        top: 31%;
+}
+.triangle-down .blue::before{
+    content: "";
+        border-width: 8px;
+        border-style: solid;
+        border-color: blue transparent transparent transparent;
+        position: absolute;
+        left: 2%;
+        top: 130%;
+}
+.triangle-down .red::before{
+    content: "";
+        border-width: 8px;
+        border-style: solid;
+        border-color: red transparent transparent transparent;
+        position: absolute;
+        left: 2%;
+        top: 130%;
+}
+.triangle-down .green::before{
+    content: "";
+        border-width: 8px;
+        border-style: solid;
+        border-color: green transparent transparent transparent;
+        position: absolute;
+        left: 2%;
+        top: 130%;
+}
+.triangle-down .orange::before{
+    content: "";
+        border-width: 8px;
+        border-style: solid;
+        border-color: orange transparent transparent transparent;
+        position: absolute;
+        left: 2%;
+        top: 130%;
+}
